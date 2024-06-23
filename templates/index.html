@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="author" content="Shrimp">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+
+    <!-- WEBSITE TITLE & DESCRIPTION -->
+    <title>SundayCW</title>
+    <meta name="description" content="Sunday Cinematic World">
+    <meta name="keywords" content="game, gaming, videogame, developer, fortnite, unreal editor, unreal engine, fortnite creative, studio, team">
+
+    <!-- OG meta tags that improve the look of your post on social media -->
+    <meta property="og:site_name" content="" /><!--website name-->
+    <meta property="og:site" content="" /> <!--website link-->
+    <meta property="og:title" content=""/> <!--Post title-->
+    <meta property="og:description" content="" /> <!--Post description-->
+    <meta property="og:image" content="" /><!-- Image link (jpg only)-->
+    <meta property="og:url" content="" /> <!--where do you want your post to link to-->
+    <meta property="og:type" content="article" />
+
+    <!-- Favicon and Apple Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='images/favicon/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='images/favicon/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='images/favicon/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='images/favicon/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='images/favicon/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='images/favicon/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='images/favicon/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='images/favicon/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='images/favicon/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='images/favicon/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon/favicon-16x16.png') }}">
+
+    <!-- STYLES -->
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/d00949b10c.js" crossorigin="anonymous"></script>
+    <!-- Animations -->
+    <link href="{{ url_for('static', filename='css/animations.css') }}" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="{{ url_for('static', filename='css/lightbox.min.css') }}" rel="stylesheet">
+    <!-- Video Lightbox -->
+    <link href="{{ url_for('static', filename='css/modal-video.min.css') }}" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader-wrapper">
+        <h1 class="loader-logo">SUNDAY <span class="colored">CINEMATIC WORLD</span></h1>
+        <div id="progress"></div>
+        <h3 class="loader-text">LOADING</h3>
+    </div>
+    
+    <!-- //// HEADER //// -->
+    <header id="main-header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Site Logo -->
+                <a id="logo" class="navbar-brand" href="#"><img class="img-fluid" src="{{ url_for('static', filename='images/sundaycw_logo.png') }}" alt="site logo"></a>
+                <!-- Dropdown Button -->
+                <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#games">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><!-- Header End -->
+    
+    <!-- /// HERO SECTION /// -->
+    <div id="hero-section" class="medium-margin">
+        <div class="row hero-unit">
+            <div class="hero-overlay"></div>
+            <video autoplay loop muted poster="{{ url_for('static', filename='images/poster.jpg')}}" id="bgvid" class="img-fluid">
+                <source src="{{ url_for('static', filename='images/bckrnd_vid.mp4') }}" type="video/mp4"><!-- your video goes here -->
+            </video>
+             <div class="hero-caption">
+                <h1> <span class="colored"> </span> </h1>
+            </div>
+        </div>
+    </div><!-- Hero Section End -->
+    
+    <!-- /// Main Container /// -->
+    <div class="container">
+        <!-- /// ABOUT SECTION /// -->
+    <div id="about" class="large-margin">
+        <a href="about"></a><!-- Nav Anchor -->
+        <div class="row heading tiny-margin">
+            <div class="col-md-auto">
+                <h1 class="animation-element slide-down">ABOUT <span class="colored">US</span></h1>
+            </div>
+            <div class="col">
+                <hr class="animation-element extend">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="small-margin">Our mission is to create engaging, immersive, and fun experiences for the Fortnite community. We strive to craft unique worlds and game modes that inspire players to explore, compete, and connect. From custom maps and game modes to intricate challenges, we offer a wide range of creative services within Fortnite. Our projects are designed to captivate and engage, providing players with experiences they won't forget.</p>
+            </div>
+            <div class="col-md-6">
+                <img id="support-image" src="{{ url_for('static', filename='images/placeholder.jpg') }}" data-src="{{ url_for('static', filename='images/about.png') }}" class="img-fluid b-lazy" alt="digital collage">
+            </div>
+        </div>
+        <div class="row counters">
+            <div class="col-md-4 counter">
+                <p class="play-count-text">Total Plays</p>
+                <span id="playCount1" class="play-count">0</span>
+            </div>
+            <div class="col-md-4 counter">
+                <p class="play-count-text">Times Featured</p>
+                <span id="playCount2" class="play-count">0</span>
+            </div>
+            <div class="col-md-4 counter">
+                <p class="play-count-text">Featured Hubs</p>
+                <span id="playCount3" class="play-count">0</span>
+            </div>
+        </div>
+    </div>
+    <!-- /// DISCORD SECTION /// -->
+    <div id="discord" class="large-margin">
+        <a href="discord"></a><!-- Nav Anchor -->
+        <div class="row heading tiny-margin">
+            <div class="col-md-auto">
+                <h1 class="animation-element slide-down">JOIN OUR <span class="colored">DISCORD SERVER</span></h1>
+            </div>
+            <div class="col">
+                <hr class="animation-element extend">
+            </div>
+        </div>
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="https://discord.gg/sundaycws" target="_blank" class="discord-button">
+                    <img src="{{ url_for('static', filename='images/discord-logo.png') }}" alt="Discord Logo" class="discord-logo">
+                    Join Our Discord
+                </a>
+            </div>
+        </div>
+    </div>
+        <!-- /// GAMES SECTION /// -->
+        <div id="games" class="large-margin">
+            <a href="games"></a><!-- Nav Anchor -->
+            <div class="row heading tiny-margin">
+                <div class="col-md-auto">
+                    <h1 class="animation-element slide-down">OUR <span class="colored">GAMES</span></h1>
+                </div>
+                <div class="col">
+                    <hr class="animation-element extend">
+                </div>
+            </div>
+
+            <div class="games-portfolio ">
+                <!-- Game Card Video -->
+                <div class="row game-card pc new">
+                    <div class="col-lg-12 col-xl-5 game-card-left">
+                        <a href="#" class="js-video-button" data-video-id="oB419CENuj4" data-channel="youtube"> <!-- Video link goes here -->
+                            <div class="overlay">
+                                <i class="fa fa-play fa-3x"></i>
+                            </div>
+                            <img src="{{ url_for('static', filename='images/octogame_thumb.jpg') }}" data-src="{{ url_for('static', filename='images/octogame_thumb.jpg') }}" class="img-fluid b-lazy" alt="video thumbnail"> <!-- Video Thumbnail Img -->
+                        </a>
+                    </div>
+                    <div class="col-lg-12 col-xl-7 game-card-right">
+                        <h2 class="short-hr-left">OCTO GAME 2.0 문어 게임</h2>
+                        <p class="tags"><span class="subtle"></span> </p>
+                        <p class="game-description">Our thrilling adaptation of the popular Squid Game show, brought to life in Fortnite Creative. Immerse yourself in this intense, high-stakes competition where players face a series of challenging mini-games inspired by the iconic series.</p>
+                        <div class="code2-btn">
+                            <div class="code2-container">
+                                <span class="code2-text">1202-0130-7283</span>
+                                <button class="copy2-icon" data-code="1202-0130-7283">COPY CODE
+                                    <span class="tooltip">Copy Code</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                </div><!-- Game Card End -->
+                
+                <!-- Game Card -->
+                <div class="row game-card mobile new">
+                    <div class="col-lg-12 col-xl-5 game-card-left">
+                        <a href="{{ url_for('static', filename='images/ss_slap/ss1.png') }}" data-lightbox="screenshots_slap">
+                            <div class="overlay">
+                                <i class="fa fa-picture-o fa-3x"></i>
+                            </div>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="{{ url_for('static', filename='images/slap_thumb.jpg') }}">
+                                <source media="(min-width: 768px)" srcset="{{ url_for('static', filename='iimages/ss_slap/ss1.png') }}">
+                                <img src="{{ url_for('static', filename='images/slap_thumb.jpg') }}" data-src="{{ url_for('static', filename='images/slap_thumb.jpg') }}" class="img-fluid b-lazy" alt="aurora image">
+                            </picture>
+                        </a>
+                        <!-- <a href="{{ url_for('static', filename='images/ss_slap/ss1.png') }}" data-lightbox="screenshots_slap"></a> -->
+                        <a href="{{ url_for('static', filename='images/ss_slap/ss2.png') }}" data-lightbox="screenshots_slap"></a>
+                    </div>
+                    <div class="col-lg-12 col-xl-7 game-card-right">
+                        <h2 class="short-hr-left">SLAP FIGHTS</h2>
+                        <p class="game-description">Step into the chaotic and hilarious world of Slap Fights, where players equip themselves with a variety of unique and powerful gloves to slap their opponents out of the arena!</p>
+                        <div class="code2-btn">
+                            <div class="code2-container">
+                                <span class="code2-text">8851-5480-5161</span>
+                                <button class="copy2-icon" data-code="8851-5480-5161">COPY CODE
+                                    <span class="tooltip">Copy Code</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                </div><!-- Game Card End -->
+                
+                <!-- Game Card -->
+                <div class="row game-card pc">
+                    <div class="col-lg-12 col-xl-5 game-card-left">
+                        <a href="{{ url_for('static', filename='images/game_larggfe.jpg') }}" data-lightbox="screenshots_gungame">
+                            <div class="overlay">
+                                <i class="fa fa-picture-o fa-3x"></i>
+                            </div>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="{{ url_for('static', filename='images/gungame_thumb.jpg') }}">
+                                <source media="(min-width: 768px)" srcset="{{ url_for('static', filename='images/game_largeff.jpg') }}">
+                                <img src="{{ url_for('static', filename='images/gungame_thumb.jpg') }}" data-src="{{ url_for('static', filename='images/gungame_thumb.jpg') }}" class="img-fluid b-lazy" alt="aurora image">
+                            </picture>
+                        </a>
+                        <a href="{{ url_for('static', filename='images/game_largeff.jpg') }}" data-lightbox="screenshots_gungame"></a>
+                    </div>
+                    <div class="col-lg-12 col-xl-7 game-card-right">
+                        <h2 class="short-hr-left">FIRST PERSON GUN GAME</h2>
+                        <p class="game-description">Dive into the exhilarating world of our Gun Game, a first-person experience where every kill elevates your arsenal! Engage in fast-paced combat as you progress through a series of increasingly powerful weapons with each enemy you take down.</p>
+                        <div class="code2-btn">
+                            <div class="code2-container">
+                                <span class="code2-text">0016-1037-3056</span>
+                                <button class="copy2-icon" data-code="0016-1037-3056">COPY CODE
+                                    <span class="tooltip">Copy Code</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                </div><!-- Game Card End -->
+                
+                <!-- Game Card -->
+                <div class="row game-card mobile">
+                    <div class="col-lg-12 col-xl-5 game-card-left">
+                        <a href="#" class="js-video-button" data-video-id='DPBW_MFqeRs' data-channel="youtube"> <!-- Video link goes here -->
+                            <div class="overlay">
+                                <i class="fa fa-play fa-3x"></i>
+                            </div>
+                            <img src="{{ url_for('static', filename='images/anime_thumb.jpg') }}" data-src="{{ url_for('static', filename='images/anime_thumb.jpg') }}" class="img-fluid b-lazy" alt="video thumbnail"> <!-- Video Thumbnail Img -->
+                        </a>
+                    </div>
+                    <div class="col-lg-12 col-xl-7 game-card-right">
+                        <h2 class="short-hr-left">ANIME SCHOOL SIMULATOR</h2>
+                        <p class="game-description">Welcome to Anime School Simulator, where you can experience the joys and challenges of school life in a vibrant, anime-inspired world. Attend classes, grow adorable pets, play with friends, and strive to become a high star student in this cozy, fun, and engaging roleplay map.</p>
+                        <div class="code2-btn">
+                            <div class="code2-container">
+                                <span class="code2-text">5608-6676-3565</span>
+                                <button class="copy2-icon" data-code="5608-6676-3565">COPY CODE
+                                    <span class="tooltip">Copy Code</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                </div><!-- Game Card End -->
+            </div>
+
+        </div>
+       
+        <!-- /// CONTACT SECTION /// -->
+        <div id="contact" class="large-margin">
+            <a href="contact"></a><!-- Nav Anchor -->
+            <div class="row heading tiny-margin">
+                <div class="col-md-auto">
+                    <h1 class="animation-element slide-down">GET IN <span class="colored">TOUCH</span></h1>
+                </div>
+                <div class="col">
+                    <hr class="animation-element extend">
+                </div>
+            </div>
+            <div class="">
+                <div class="row small-margin">
+                    <div class="col-md-11">
+                        <p>We would love to hear from you. Whether you have questions, feedback, looking for partnerships or just want to say hello, feel free to reach out.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="short-hr-left">LEAVE US A MESSAGE</h2>
+                        <form id="contactForm"  action="https://formspree.io/f/xgvwwadl" method="POST" data-toggle="validator">
+                            <div class="form-group">
+                                <!-- Name Field -->
+                                <input type="text" id="name" placeholder="Name*" required size="35" data-error="Name is required">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email Field -->
+                                <input type="email" id="email" placeholder="Email*" required size="35" data-error="Email is required">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Message Field -->
+                                <textarea id="message" name="message" placeholder="Message*" required data-error="Message cannot be empty"></textarea>
+                                <p class="subtle">* required field</p>
+                                <div class="help-block with-errors"></div>
+                                <!-- Submit Button -->
+                                <button type="submit" class="button">SEND MESSAGE</button>
+                                <!-- Success Message -->
+                                <div id="msgSubmit" class="text-center hidden"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="short-hr-left">OUR DETAILS</h2>
+                        <div id="contact-info">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i><p>Email: <span class="colored"><a href="mailto:contact@sundaycw.net">contact@sundaycw.net</a></span></p></li>
+                                <li><i class="fa-solid fa-gamepad"></i><p>Fortnite Profile: <span class="colored"><a href="https://dropnite.com/c/SUNDAYCW/" target="_blank">dropnite.com/c/SUNDAYCW</a></span></p></li>
+                            </ul>
+                        </div>
+                        <!-- Google Map -->
+                        <h2 class="short-hr-left">MEMBER OF</h2>
+                        <div>
+                            <a href="https://vysena.com/" target="_blank">
+                                <img src="{{ url_for('static', filename='images/logo_vysena.png') }}" style="width: 300px; height: auto;">
+                            </a>
+                        </div>
+                                              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Main Container End -->
+    <!-- /// FOOTER /// -->
+    <footer id="main-footer">
+        <div id="footer"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="copyright">&copy; SundayCW <span id="year"> </span></p><!-- Copyright Text -->
+                        <ul class="social-links"> <!-- Social Media Icons -->
+                            <li><a href="https://x.com/SundayCWs" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/sundaycws/" target="_blank"><i class="fa fa-instagram fa-lg icon-social"></i></a>
+                            <li><a href="https://www.tiktok.com/@sundaycw" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                            <li><a href="https://discord.gg/sundaycws" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                            <li><a href="https://www.youtube.com/@SundayCWs" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- Container End -->
+        </div>
+    </footer><!-- Footer End -->
+    
+    <!-- //// SCRIPTS //// -->
+    <script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/blazy.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/lightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-modal-video.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/validator.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/strider.js') }}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB64kJJiSynOc9ZqkNMOyl94cvsw5Z2uno"></script>
+    <script src="{{ url_for('static', filename='js/counter.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/copy.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/copy2.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/vid-play.js') }}"></script>
+</body>
+</html>
