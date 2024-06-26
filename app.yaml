@@ -1,0 +1,12 @@
+runtime: python39  # Use python38 or python310 for other Python versions
+
+entrypoint: gunicorn -b :$PORT app:app  # Use main:app if your file is main.py
+
+handlers:
+- url: /.*
+  script: auto
+
+env_variables:
+  FLASK_ENV: 'production'
+
+instance_class: F2  # Optional: Choose the instance class
