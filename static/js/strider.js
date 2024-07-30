@@ -73,7 +73,7 @@ $(document).ready(function(){
     });
     
     // VIDEO LIGHTBOX
-    $(".js-video-button").modalVideo();
+    //$(".js-video-button").modalVideo();
     
     // LOAD GOOGLE MAP
    google.maps.event.addDomListener(window, 'load', init);

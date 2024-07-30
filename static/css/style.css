@@ -1144,3 +1144,27 @@ a:hover {
 .colored a {
     color: #FF4753; /* Replace 'red' with your desired color code */
 }
+
+
+.discord-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #7289da;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.discord-button:hover {
+    background-color: #5a6fb5;
+}
+
+.discord-logo {
+    width: 34px;
+    height: 25px;
+    margin-right: 10px;
+}

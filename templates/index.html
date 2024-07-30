@@ -92,7 +92,7 @@
     <div id="hero-section" class="medium-margin">
         <div class="row hero-unit">
             <div class="hero-overlay"></div>
-            <video autoplay loop muted poster="{{ url_for('static', filename='images/poster.jpg')}}" id="bgvid" class="img-fluid">
+            <video autoplay loop muted poster="{{ url_for('static', filename='images/')}}" id="bgvid" class="img-fluid"> <!-- HERE FOR PLACEHOLDER WHEN VIDEO LAGS-->
                 <source src="{{ url_for('static', filename='images/bckrnd_vid.mp4') }}" type="video/mp4"><!-- your video goes here -->
             </video>
              <div class="hero-caption">
@@ -232,15 +232,11 @@
                 <!-- Game Card -->
                 <div class="row game-card pc">
                     <div class="col-lg-12 col-xl-5 game-card-left">
-                        <a href="{{ url_for('static', filename='images/game_larggfe.jpg') }}" data-lightbox="screenshots_gungame">
+                        <a href="#" class="js-video-button" data-video-id='13eaFs9f3NM' data-channel="youtube"> <!-- Video link goes here -->
                             <div class="overlay">
-                                <i class="fa fa-picture-o fa-3x"></i>
+                                <i class="fa fa-play fa-3x"></i>
                             </div>
-                            <picture>
-                                <source media="(min-width: 1200px)" srcset="{{ url_for('static', filename='images/gungame_thumb.jpg') }}">
-                                <source media="(min-width: 768px)" srcset="{{ url_for('static', filename='images/game_largeff.jpg') }}">
-                                <img src="{{ url_for('static', filename='images/gungame_thumb.jpg') }}" data-src="{{ url_for('static', filename='images/gungame_thumb.jpg') }}" class="img-fluid b-lazy" alt="aurora image">
-                            </picture>
+                            <img src="{{ url_for('static', filename='images/gungame_thumb.jpg') }}" data-src="{{ url_for('static', filename='images/gungame_thumb.jpg') }}" class="img-fluid b-lazy" alt="video thumbnail"> <!-- Video Thumbnail Img -->
                         </a>
                         <a href="{{ url_for('static', filename='images/game_largeff.jpg') }}" data-lightbox="screenshots_gungame"></a>
                     </div>
@@ -262,7 +258,7 @@
                 <!-- Game Card -->
                 <div class="row game-card mobile">
                     <div class="col-lg-12 col-xl-5 game-card-left">
-                        <a href="#" class="js-video-button" data-video-id='DPBW_MFqeRs' data-channel="youtube"> <!-- Video link goes here -->
+                        <a href="#" class="js-video-button" data-video-id='13eaFs9f3NM' data-channel="youtube"> <!-- Video link goes here -->
                             <div class="overlay">
                                 <i class="fa fa-play fa-3x"></i>
                             </div>
@@ -305,31 +301,26 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <!-- <div class="col-md-6">
                         <h2 class="short-hr-left">LEAVE US A MESSAGE</h2>
                         <form id="contactForm"  action="https://formspree.io/f/xgvwwadl" method="POST" data-toggle="validator">
                             <div class="form-group">
-                                <!-- Name Field -->
                                 <input type="text" id="name" placeholder="Name*" required size="35" data-error="Name is required">
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <!-- Email Field -->
                                 <input type="email" id="email" placeholder="Email*" required size="35" data-error="Email is required">
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <!-- Message Field -->
                                 <textarea id="message" name="message" placeholder="Message*" required data-error="Message cannot be empty"></textarea>
                                 <p class="subtle">* required field</p>
                                 <div class="help-block with-errors"></div>
-                                <!-- Submit Button -->
                                 <button type="submit" class="button">SEND MESSAGE</button>
-                                <!-- Success Message -->
                                 <div id="msgSubmit" class="text-center hidden"></div>
                             </div>
                         </form>
-                    </div>
+                    </div> -->
                     <div class="col-md-6">
                         <h2 class="short-hr-left">OUR DETAILS</h2>
                         <div id="contact-info">
@@ -337,7 +328,9 @@
                                 <li><i class="fa fa-envelope"></i><p>Email: <span class="colored"><a href="mailto:contact@sundaycw.net">contact@sundaycw.net</a></span></p></li>
                                 <li><i class="fa-solid fa-gamepad"></i><p>Fortnite Profile: <span class="colored"><a href="https://dropnite.com/c/SUNDAYCW/" target="_blank">dropnite.com/c/SUNDAYCW</a></span></p></li>
                             </ul>
-                        </div>
+                        </div>                                              
+                    </div>
+                    <div class="col-md-6">
                         <!-- Google Map -->
                         <h2 class="short-hr-left">MEMBER OF</h2>
                         <div>
